@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Lab 5</title>
+<style>
+#myCanvas {
+    border:3px 
+    solid gray;  
+    }
+</style>
+<h3>Here's the second part of your new day.</h3>
+<span>I hope you enjoyed part 1.</span>
+</head>
+<body>
+<span>Are you satisfied with the set of smiley faces I gave to you? If so, thank you. Anyway, I hope you enjoy this map.</span>
+<div class="box">
+    <h4>University of Washington Bookstore</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d950.081461331378!2d-122.31304350114365!3d47.66040814401427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490148b239c0b8f%3A0xa8469f0b785497ea!2sUniversity+Book+Store!5e0!3m2!1sen!2sus!4v1539599017706"
+     width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+</iframe>
+<span>The University Way Bookstore, full of cool books and everything to read!!!</span>
+</div>
+<p>
+This is the UW bookstore, where we can read all sorts of awesome books, study material, and everything!
+There's also a cool ice cream store nearby if you want some unique ice cream.
+Wanna play a game of tic-tac-toe? Here we go!
+</p>
+<canvas id="myCanvas" width="600" height="600">This is my canvas.</canvas>
+<p>
+Do you like tic-tac-toe? If so, good for you. A good way to enjoy the simple stuff.<br>
+Alright, that wraps it up for today. See ya!
+</p>
+</body>
+<script>
+     var canvas=document.getElementById("myCanvas");  
+     var context=canvas.getContext("2d");
+     context.moveTo(200,0); 
+      context.lineTo(200,600); 
+       context.lineWidth=5;  
+       context.stroke();
+       context.moveTo(400,0); 
+      context.lineTo(400,600); 
+       context.lineWidth=5;  
+       context.stroke();
+       context.moveTo(0,200); 
+      context.lineTo(600,200); 
+       context.lineWidth=5;  
+       context.stroke();
+       context.moveTo(0,400); 
+      context.lineTo(600,400); 
+       context.lineWidth=5;  
+       context.stroke();
+       context.moveTo(200,200); 
+      context.lineTo(400,400); 
+       context.lineWidth=5;  
+       context.stroke();
+       context.moveTo(400,200); 
+      context.lineTo(200,400); 
+       context.lineWidth=5;  
+       context.stroke();
+       var radius=100, angle=2*Math.PI;
+        context.arc(100, 100, radius, 0, angle);
+            context.stroke();
+            context.moveTo(600,500);
+        context.arc(500, 500, radius, 0, angle);
+            context.stroke();
+</script>
+</html>
