@@ -1,0 +1,29 @@
+.jumbotron{
+    background-color: #6f42c1;
+    height: 500px;
+    width: 1000px;
+}
+
+p{
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row{
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.col, .col-1, .col-2, .col-3, .col-4{
+    background-color: rgba(238, 130, 238, 0.75);
+    border: 1px solid gray;
+}
+
+.col-5, .col-6, .col-7, .col-8{
+    background-color: rgba(255, 0, 255, 0.75);
+    border: 1px solid gray;
+}
+
+.col-sm{
+    background-color: rgba(238, 130, 238, 0.5);
+    border: 1px solid gray;
+}
