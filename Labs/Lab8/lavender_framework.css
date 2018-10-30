@@ -9,6 +9,8 @@ body {
   color: #505050;
   margin: 30px auto;
   padding: 20px;
+  max-width: 800px;
+  width: 80%;
 }
 
 /* set all paragraph font size to 1.2em of the root container */
@@ -21,9 +23,9 @@ p {
    the enter being rgba(0, 0, 0, 0.3).  Hint: use special type of 
    background image of background-image: linear-gradient */
 hr {
-  background-image: linear-gradient(right, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.3), rgba(0,0,0,0.1));
   height: 2px;
-  /*border: 0;*/
+  border: 0px;
 }
 
 /* wikipedia citation should have a wider letter spacing of 0.1em, 
@@ -62,7 +64,7 @@ an oblique font style and smaller size of 0.8em */
    the same color as the background (hint: rgba(r,g,b, 0.6) ) and 
    offset the paragraph from the left by 8 pixels using padding-left */
 p.intro {
-  border-left: rgba(51,0,111,0.6);
+  border-left: 5px solid rgba(51,0,111,0.6);
   padding-left: 8px;
 
 }
@@ -80,14 +82,14 @@ h1 {
    same color as the lavender theme color but 10% darker (i.e. alpha= 0.6 + 0.1) */
 h1, h2 {
   text-transform: capitalize;
-  color: alpha=0.6+0.1;
+  color: rgba(51,0,111,0.7);
 }
 
 /* make the first charactrer of paragraph1 twice the size (i.e. 2em) of all other p 
    characters, same color as the h1 text and bold */
 #para1::first-letter {
   font-size: 2em;
-  color: rgba(51,0,111,0.7))
+  color: rgba(51,0,111,0.7);
 }
 
 /* =========================== COLOR SWATCHES ========================== */
@@ -147,7 +149,7 @@ tr:first-child {
    Hint: temporarily turn on a border to see where the photos container is. */
 .photos {
   text-align: center;
-  border: 1px solid black; 
+  /* border: 1px solid black;  */
 }
 
 /* create a grid of 3 across for 6 or 9 photos.  Hint: one html table cell has 

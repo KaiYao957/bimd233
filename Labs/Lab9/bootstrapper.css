@@ -1,7 +1,20 @@
+
+
+/* Jumbotron Description */
 .jumbotron{
-    background-color: #6f42c1;
+    background-color: purple;
     height: 500px;
     width: 1000px;
+}
+
+.jumbotron p{
+    color: orange;
+}
+.jumbotron h1{
+    color: cyan;
+}
+.jumbotron p strong{
+    color: darkmagenta;
 }
 
 p{
@@ -9,15 +22,16 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Rows & Columns */
 .row{
     background-color: rgba(0, 0, 255, 0.5);
 }
-
+/* Smaller rows */
 .col, .col-1, .col-2, .col-3, .col-4{
     background-color: rgba(238, 130, 238, 0.75);
     border: 1px solid gray;
 }
-
+/* Larger rows */
 .col-5, .col-6, .col-7, .col-8{
     background-color: rgba(255, 0, 255, 0.75);
     border: 1px solid gray;
@@ -26,4 +40,9 @@ p{
 .col-sm{
     background-color: rgba(238, 130, 238, 0.5);
     border: 1px solid gray;
+}
+
+/* Flex-Box 360 (pun intended) */
+.flex-container{
+
 }
