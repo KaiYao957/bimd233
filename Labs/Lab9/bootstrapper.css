@@ -1,21 +1,32 @@
 
+/* Fundamental Blueprint Framing */
+body{
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Jumbotron Description */
 .jumbotron{
     background-color: purple;
-    height: 500px;
+    height: 700px;
     width: 1000px;
 }
 
 .jumbotron p{
+    display: flex;
     color: orange;
+    justify-content: center;
 }
 .jumbotron h1{
+    display: flex;
     color: cyan;
+    justify-content: center;
 }
 .jumbotron p strong{
     color: darkmagenta;
 }
+
 
 p{
     font-size: 110%;
@@ -42,7 +53,47 @@ p{
     border: 1px solid gray;
 }
 
-/* Flex-Box 360 (pun intended) */
-.flex-container{
 
+nav{
+    background-color: purple;
+}
+li a{
+    color:orange;
+    margin: 5px;
+}
+input{
+    max-width: 500px;
+    text-align: middle;
+}
+
+form{
+    background-color: khaki;
+    display: flex;
+    flex-direction: column;
+}
+
+/* My Cards */
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-shrink: 0.2;
+    background-color: silver;
+}
+.card{
+    height: 85vh;
+    width: 30vh;
+}
+#c1{
+    background-color: gray;
+    justify-content: flex-start;
+}
+#c2{
+    height: 90vh;
+    background-color: mediumpurple;
+    justify-content: center;
+}
+#c3{
+    background-color: cyan;
+    color: orange;
 }

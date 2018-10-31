@@ -1,6 +1,9 @@
 <html>
 <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="bootstrapper.css" type="text/css">
 </head>
@@ -81,17 +84,46 @@
     <br>
     <p style="color:lavender; background-color: gray">
         These bars look like parts of the lavender information page like last time. Do you like lavender? I hope so, because not only is lavender so beautiful,
-        but it also smells lovely and light, with lovely purplr flowers! Why not enjoy some lavender ice cream with me? It tastes sweet, with a beautiful floral scent and taste matching the character of lavender!
+        but it also smells lovely and light, with lovely purple flowers! Why not enjoy some lavender ice cream with me? It tastes sweet, with a beautiful floral scent and taste matching the character of lavender!
     </p>
+    <p>I know you're excited for that jumbotron, but I want to introduce you to the navigation bar. There's even a button that leads to the jumbotron, if you want to look at the jumbotron already.</p>
+    <nav class="navbar navbar-expand">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="color:cyan; font-size: 150%">Bootstrapped Page</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#jumbo" class="nav-link">Jumbotron</a></li>
+                <li class="nav-item"><a href="#form" class="nav-link">Form</a></li>
+                <li class="nav-item"><a href="#cards" class="nav-link">Cards</a></li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#dd" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Dropdown
+                              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dd">
+                              <a class="dropdown-item" href="#intro">Intro</a>
+                              <a class="dropdown-item" href="#riddle">Riddle</a>
+                              <a class="dropdown-item" href="#columns">Columns</a>
+                        </div>
+                  </li>
+                  <li><button type="button" class="btn btn-info" style="margin: 5px">Info</button></li>
+                  <li class="nav-item">
+                        <a class="nav-link disabled" href="#X">Access Denied</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          <br><hr style="border: 10px solid orchid"><br>
     <div class="container">
       <h3>Why not take a look at this dumbo mumbo jumbo jumbotron? It's the BFSJT 9000! (Big Freakin' Superduper JumboTron 9000)</h3>
-      <div class="jumbotron">
-        <h1>BFSJT9K BIMD233</h1> 
+      <div class="jumbotron" id="jumbo">
+        <h1 id="intro">BFSJT9K BIMD233</h1> 
             <p style="font-size: 1.05em; color: cyan">
                   Welcome to the jumbotron. How can I amuse you?
             </p>
       <p>Would you like some pop culture references? Or some life advice? If so, continue scrolling (or looking) down.</p>
-      <p style="font-size: 0.8em">
+      <p style="font-size: 0.8em" id="riddle">
             Want your first pop culture references? Think about the text in the jumbotron so far. What colors do you see? Do they remind you
             of some popular memetic video game? Go ahead and guess it.
             <strong>
@@ -99,62 +131,94 @@
                   Or maybe you like my homorous voice that sounds like GLaDOS? Hope you didn't have to euthanize your faithful Companion Cube to a firey death in an incinerator.
             </strong>
       </p>
-      <div class="row">
+      <div class="row" id="columns">
             <div class="col" style="color:yellow">
                   When life give you lemons, don't make lemonade! <strong style="color:red">GET MAD!!!</strong>
-                  I don't want your damn lemons, what am I supposed to do with these?!! Demand to see life's manager! Make life RUE THE DAY it thought I could give
-                  us lemons!!!!!!
+                  I don't want your damn lemons, what am I supposed to do with these?!! Demand to see life's manager! Make life RUE THE DAY it thought it could give
+                  us lemons!!!!!! DO YOU KNOW WHO I AM?!!! I'm going BURN LIFE'S HOUSE DOWN! <strong>WITH THE LEMONS!!!!!</strong> Let's invent a COMBUSTIBLE LEMON to burn life's house down!!!!!!!!!
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col">
+                  Here's some more arbitrary Lorem Ipsum faux-Latin. If you like dummy Lorem Ipsum text, thank the Romans. Here you go. <br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Aliquam purus sit amet luctus venenatis lectus magna fringilla. Sed cras ornare arcu dui vivamus arcu felis bibendum.
+            </div>
+            <div class="col">
+                  Did you know that The Simpsons made a crossover episode with Futurama? Yes, seriously! They made an episode with the Simpsons family AND
+                  that foul-mouthed trash-talkin' robot named Bender! (As well as that quirky pizza delivery Fry and Planet Express' finest mad scientist, Professor Fransworth.)
+                  If you're as dumb as Homer Simpson and say "D'oh!" all the time, or if you at least want a reference, here you go: <br>
+                  <a href="http://simpsons.wikia.com/wiki/Simpsorama">Definite proof that The Simpsons made a crossover with Futurama</a>
+            </div>
       </div>
       </div>
     </div>
 
+    <p>
+          Of course, if you want me to know you more and enjoy more of my lab practice and web design stuff, you can sign this form here!
+    </p>
     <!-- Form for posting to You Dub (UW) -->
-    <form action="http://courses.washington.edu/bimd233/bimd.php" method="post">
+    <form action="http://courses.washington.edu/bimd233/bimd.php" method="post" id="form">Form to Sign
       <div class="form-group">
             <label for="FirstName">First Name:</label>
             <input type="text" class="form-control" id="InputFirstName">
       </div>
+      <div class="form-group">
+            <label for="LastName">Last Name:</label>
+            <input type="text" class="form-control" id="InputLastName">
+      </div>
+      <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="phone" class="form-control" id="phone">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
     </form>
-
-    <button type="button" class="btn btn-primary">Button 1</button>
-    <button type="button" class="btn btn-secondary">Button 2</button>
-    <button type="button" class="btn btn-success">Complete</button>
-    <button type="button" class="btn btn-danger">Don't press this big red button!!!</button>
-    <button type="button" class="btn btn-warning">Handle with care.</button>
-    <button type="button" class="btn btn-info">For more information</button>
-    <button type="button" class="btn btn-light">Brighten</button>
-    <button type="button" class="btn btn-dark">Darken</button>
-    <div id="tabs">
-      <ul>    
-      <li>
-            <a href="#tabs-1">Borg</a>
-      </li>    
-      <li>
-            <a href="#tabs-2">Riker</a>
-      </li>    
-      <li>
-            <a href="#tabs-3">Data</a>
-      </li>  
-      </ul>  
-      <div id="tabs-1">    
-            <p>Computer, lights up! This is not about revenge. This is about justice.
-                   Mr. Crusher, ready a collision course with the Borg ship. </p>
-      </div>  
-      <div id="tabs-2">    
-            <p>Congratulations - you just destroyed the Enterprise. We have a saboteur aboard.
-                   I will obey your orders. I will serve this ship as First Officer.
-                    And in an attack against the Enterprise, I will die with this crew.
-                     But I will not break my oath of loyalty to Starfleet.</p>
-      </div>  
-      <div id="tabs-3">
-          <p>I recommend you don't fire until you're within 40,000 kilometers.
-                 When has justice ever been as simple as a rule book? I suggest you drop it, Mr. Data.
-                  Earl Grey tea, watercress sandwiches... and Bularian canapés?
-                   Are you up for promotion? </p>  
+<p>
+      Now that you're done with your form, time to reveal your gifts for visiting this page! I would like to thank you for appreciating my first Bootstrapped page!
+      (And also for viewing my previous lab practice and other pages!) So here are your prizes!!!!! *applause*
+</p>
+<div class="container" id="cards">
+    <div class="card" id="c1">
+      <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/61H4PL8yyFL._SX425_.jpg" alt="Nintendo Switch">
+            <div class="card-body">
+                  <h5 class="card-title">A Nintendo Switch</h5>
+                  <p class="card-text">
+                        The Nintendo Switch has been out for months recently, and it's become one of the <strong>hottest</strong> gaming consoles on the market!
+                        It's been getting lots of 3rd party support and awesome games! I heard that <strong>Octopath Traveler</strong> has been becoming popular!
+                        Here's a button for more information, as well as games to play and a place to buy one!
+                  </p>
+                  <a href="https://www.nintendo.com/switch/"class="btn btn-primary">Official Nintendo Switch site</a>
             </div>
       </div>
+      <div class="card" id="c2">
+            <img class="card-img-top" src="https://s23991.pcdn.co/wp-content/uploads/2007/04/lavender-honey-ice-cream.jpg" alt="Lavender ice cream">
+                  <div class="card-body">
+                        <h5 class="card-title">Lavender Ice Cream</h5>
+                        <p class="card-text">
+                              Last page, I was modifying a page with lots of information about <strong style="color:lavender">lavender.</strong>
+                              You must have really loved it. And I promised you some lavender ice cream at the beginning! So here's a link to an ice cream shop near me
+                              that once served me such a delicious ice cream. Good thing it's always available from that aformentioned shop! Enjoy! (And don't forget to try some other cool flavors and tell me how they taste!)
+                        </p>
+                        <a href="http://www.mollymoon.com/"class="btn btn-primary">Visit the ice cream shop</a>
+                  </div>
+            </div>
+      <div class="card" id="c3">
+            <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/002/083/334/large/sean-colby-portalgun01.jpg?1457002225" alt="Portal Gun">
+                  <div class="card-body">
+                        <h5 class="card-title">A Portal Gun</h5>
+                              <p class="card-text">
+                                    *mimicking GLaDOS's voice* Did you enjoy my Portal joke (and riddle) on my Aperture Science Super Duper jumbotron?
+                                    I sure liked it when you thought with portals! So here's an Aperture Science Handheld Portal Device. (Or as it is commonly called, a portal gun.)
+                                    You must have like Portal memes and stuff. Did you like the lemon rant? Or that scene when Cave Johnson ranted about the quote "When life gives you lemons, make lemonade"?
+                                    If so, you're so welcome. Let us invent <strong style="color:red">COMBUSTIBLE LEMONS</strong> to burn life's house down!!! (Or at least incinerate all of its irrational nonsense.)
+                              </p>
+                        </div>
+      </div>
+</div>
+<br>
+<p>Enjoy your gifts from my Bootstrapped page! Have an awesome day!</p>
+<hr style="border: 10px solid orchid"><br>
 </body>
 </html>
