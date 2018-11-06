@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    background-color: yellow;
+    color: rgb(25, 25, 25);
+}
+
+.jumbotron{
+    background-color: bisque;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.jumbotron h2{
+    display: flex;
+    justify-content: top;
+}
+.jumbotron p, .jumbotron b, .jumbotron i{
+    color: brown;
+    font-size: 0.9em;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+}
