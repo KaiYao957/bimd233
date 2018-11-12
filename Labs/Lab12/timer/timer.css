@@ -1,0 +1,19 @@
+body{
+    background-color: purple;
+    border: 50px solid magenta;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+h2{
+    background-color: indigo;
+    color: violet;
+    font-size: 120%;
+    margin: 10px;
+}
+
+p, b, button{
+    margin: 10px;
+}

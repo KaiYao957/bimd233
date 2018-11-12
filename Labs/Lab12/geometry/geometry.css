@@ -1,0 +1,25 @@
+body{
+    background-color: orange;
+    border: 50px solid chocolate;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2, h3{
+    color: beige;
+    font-size: 120%;
+    margin: 10px;
+}
+
+.jumbotron, .jumbotron p{
+    background-color: olive;
+    color: wheat;
+    margin: 15px;
+    font-size: 0.95em;
+}
+
+.jumbotron button{
+    background-color: yellow;
+    margin: 15px;
+}

@@ -1,0 +1,23 @@
+body{
+    background-color: green;
+    border: 50px solid slategray;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    color: lightgreen;
+    font-size: 120%;
+    margin: 10px;
+}
+
+.table th{
+    background-color: slategray;
+    font-size: 1.1em;
+    color: white;
+}
+
+.table tr{
+    background-color: lightgreen;
+}
