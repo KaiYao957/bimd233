@@ -1,0 +1,28 @@
+body{
+    background-color: cornflowerblue;
+    border: 50px solid darkviolet;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2,h4{
+    color: coral;
+    font-size: 120%;
+    margin: 10px;
+}
+p, b{
+    color: lightsteelblue;
+    margin: 7.5px;
+}
+
+.table th{
+    background-color: gray;
+    font-size: 1.1em;
+    color: white;
+}
+
+.table tr{
+    background-color: skyblue;
+    color: indigo;
+}
