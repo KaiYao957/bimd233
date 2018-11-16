@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 $(document).ready(function() {  
+=======
+$(document).ready(function()
+{
+>>>>>>> c8e39f165bc3633523391709d0d94482c03dc752
   // Arrays containing car information. The last two cars are placeholders with arbitrary info.
   var car1 = ["Toyota", "Corolla", "2018", "$20,652"];
   var car2 = ["Chevrolet", "Bolt", "2018", "43,155"];
