@@ -25,7 +25,7 @@ $(document).ready(function() {
     var tb = document.getElementById("company-data");
 
     tb.innerHTML = "<th>Company Name</th> <th>Market Capital</th> <th>Sales</th> <th>Profit</th> <th>Employees</th>";
-
+    
     companies.forEach(displayCompanyData);
 
     function displayCompanyData(company)
