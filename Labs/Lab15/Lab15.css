@@ -1,0 +1,20 @@
+body{
+    background-color: rgba(16, 16, 128, 0.7);
+    color: aquamarine;
+    font-size: 18px;
+}
+
+h2, h3{
+  color: darkkhaki;
+  font-family: calibri;
+}
+
+.table th{
+  background-color: rgba(51,0,111,0.75);
+  color: lightblue;
+}
+
+.table td{
+  background-color: mediumpurple;
+  color: lightgreen;
+}
