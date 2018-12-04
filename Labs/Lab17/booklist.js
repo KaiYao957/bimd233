@@ -35,7 +35,6 @@ $(document).ready(function () {
     height: 100, // orig 401 by 4:1
     width: 133 // orig 534 by 4:1  
   };
-  $('#bg img').attr({'src': img_ref.src, 'href': img_ref.url, 'alt': img_ref.alt, 'height': img_ref.height, 'width': img_ref.width});
 
   var reference = {
     url: 'http://www.usatoday.com/story/money/markets/2016/05/20/bill-gates-read-these-5-books-summer/84675556/',
@@ -43,8 +42,6 @@ $(document).ready(function () {
     alt: 'Gates Books',
     text: 'BG:5 Books for Summer 2016'
   }
-  $('#b5 a').attr({'href': reference.url, 'src': reference.src, 'alt': reference.alt});
-  $('#b5 a').text(reference.text);
 
   // --------- jQuery Data Section ---------
 
@@ -54,6 +51,10 @@ $(document).ready(function () {
   $('ol').addClass("list-group");
   $('li').addClass("list-group-item");
   
+  $('#bg img').attr({'src': img_ref.src, 'href': img_ref.url, 'alt': img_ref.alt, 'height': img_ref.height, 'width': img_ref.width});
+  $('#b5 a').attr({'href': reference.url, 'src': reference.src, 'alt': reference.alt});
+  $('#b5 a').text(reference.text);
+
   $('li').each(function (i) {
     this.innerText = (i+1)+'. "'+books[i]['title'] +'" by '+books[i]['author'];// your code to pull values from the array of objects here
   });
