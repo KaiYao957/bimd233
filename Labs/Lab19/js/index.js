@@ -25,8 +25,11 @@ $('#getwx').on('click', function(e) {
       var humidity = data['properties']['relativeHumidity'].value.toFixed(1);
       
       // get wind info and convert m/s to kts
-      // var windDirection = data['proprties']['windDirection'].value.toFixed(1);
-      // var windSpeed = data['properties']['windSpeed'].value.toFixed(1);
+      var windDirection = data['properties']['windDirection'].value.toFixed(1);
+      var windSpeed = (data['properties']['windSpeed'].value*0.514).toFixed(1);
+      
+      var icon = data['properties'].icon;
+      var status = data['properties'].textDescription;
       
       // uncomment this if you want to dump full JSON to textarea
       var myJSON = JSON.stringify(data);
@@ -40,10 +43,15 @@ $('#getwx').on('click', function(e) {
       $('ul').append(str);
       $('ul li:last').attr('class', 'list-group-item');
       
-      // var str = "<li>Current wind: " + windDirection +" degrees " + windSpeed +"kts"+"</li>";
-      // $('ul').append(str);
-      // $('ul li:last').attr('class', 'list-group-item');
       // add additional code here for the Wind direction, speed, weather contitions and icon image
+      var str = "<li>Current wind: " + windDirection +" degrees, speed at " + windSpeed + " knots"+"</li>";
+      $('ul').append(str);
+      $('ul li:last').attr('class', 'list-group-item');
+      
+      var str = "<li><img src="+icon+"> "+status+"</li>";
+      $('ul').append(str);
+      $('ul li:last').attr('class', 'list-group-item');
+      
     }
   });
 });
