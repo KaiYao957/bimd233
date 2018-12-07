@@ -2,10 +2,12 @@ body {
   padding: 20px;
   background: black;
   margin: 0 auto;
+  color: white;
 }
 
 .container {
   background: black;
+  color: black;
   border: 7px solid #4b2e83;
   width: 900px;
   padding: 5px;

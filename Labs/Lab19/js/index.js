@@ -10,6 +10,7 @@ $('#getwx').on('click', function(e) {
   // clear out any previous data
   $('ul li').each(function() {
     // enter code to clear each li
+    $(this).remove();
   });
     
   console.log("Cleared Elements of UL");
