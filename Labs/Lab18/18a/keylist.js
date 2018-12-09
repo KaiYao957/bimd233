@@ -4,7 +4,7 @@ $(document).ready(function() {
   var state = states[0];
   var words = new Array();
   var ndx = 0;
-
+  
   $("ul").on("mouseover", "li", function() {
     console.log("x:" + $(this).text());
     $(this).attr("id", "uw");
@@ -16,14 +16,14 @@ $(document).ready(function() {
 
   // reset button click
   $("button").on("click", function(e) {
-    $('ul').remove();
+    $("ul").empty();
   });
 
   // keypress
   $("input").on("keypress", function(e) {
     var code = e.which;
     var char = String.fromCharCode(code);
-    console.log('key:' + code + '\tstate:' + state + '\tchar:' + char);
+    console.log('key:' + code + '\tstate:' + state);
     var str = "";
     switch (state) {
       // idle
@@ -35,7 +35,7 @@ $(document).ready(function() {
         {
           str += words[i];
         }
-        $('ul').append("<li>"+str+"</li>");
+        $('ul').append('<li>'+str+'</li>');
       }
         break;
 
@@ -46,7 +46,6 @@ $(document).ready(function() {
 
       // process
       case "process":
-      
         break;
 
       default:
