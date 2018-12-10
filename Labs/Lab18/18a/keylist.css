@@ -1,9 +1,11 @@
 body {
   background-color: black;
+  color: white;
 }
 
 .container {
   background: black;
+  color: black;
   border: 10px solid #4b2e83;
   width: 400px;
 }

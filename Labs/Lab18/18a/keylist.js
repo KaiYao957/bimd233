@@ -16,7 +16,12 @@ $(document).ready(function() {
 
   // reset button click
   $("button").on("click", function(e) {
+    
     $("ul").empty();
+    while(words.length>0)
+    {
+      words.pop();
+    }
   });
 
   // keypress
@@ -24,17 +29,22 @@ $(document).ready(function() {
     var code = e.which;
     var char = String.fromCharCode(code);
     console.log('key:' + code + '\tstate:' + state);
-    var str = "";
+    var str = $("input").val();
     switch (state) {
       // idle
       case "idle":
-      words.push(char);
+      // words.push(char);
+      // if(code == '8')
+      // {
+      //   words.pop();
+      //   console.log('backspace');
+      // }
       if(code == '13')
       {
-        for(i=0; i<words.length; i++)
-        {
-          str += words[i];
-        }
+        // for(i=0; i<words.length; i++)
+        // {
+        //   str += words[i];
+        // }
         $('ul').append('<li>'+str+'</li>');
       }
         break;
