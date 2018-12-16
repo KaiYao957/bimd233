@@ -1,0 +1,217 @@
+/* Basic Elements */
+body{
+    background-image: radial-gradient(rgba(81,72,175,0.72), rgba(144,140,164,0.5), rgba(212,212,220,0.36));
+    border: 90px groove skyblue;
+}
+
+hr{
+    background-image: linear-gradient(45deg, rgba(200,200,200,0.42), rgba(24,224,224,0.64),rgba(12,12,248,0.8), rgba(24,224,224,0.64), rgba(200,200,200,0.42));
+    height: 5px;
+    border: 0px;
+    max-width: 1640px;
+}
+
+h1, h2, h3{
+    font-family: calibri;
+    color: navy;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+p, ol, ul{
+    color: black;
+    font-size: 1.12em;
+    max-width: 1560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation Bar */
+#navhead{
+    color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.72em;
+}
+nav{
+    background-color: slategray;
+    color: rgba(96, 24, 216, 0.84);
+}
+li a{
+    color: rgba(96, 24, 216, 0.84);
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+/* Food Menu */
+#foodmenu{
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#foodmenu h2, #menus h2{
+    background-color: antiquewhite;
+    color: brown;
+    font-size: 2.4rem;
+}
+#foodmenu p{
+    color: rgba(244, 64, 32, 0.92);
+    font-size: 120%;
+}
+#menus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#menus .card{
+    height: 24vh;
+    width: 15vw;
+}
+#menus .card li{
+    max-width: 180px;
+    text-align: center;
+}
+#main-dish, #drink, #dessert{
+    /* background-image: url("../image/sandwich.jpg"); */
+    background-size: 15vw 24vh;
+    background-repeat: no-repeat;
+}
+#main-dish li, #ingredients li{
+    background-color: rgba(244, 64, 32, 0.92);
+    color: khaki;
+    font-size: 20px;
+    margin-right: 32px;
+    width: 300px;
+}
+#drink li, #drink-flavors li{
+    background-color: rgba(48, 172, 244, 0.92);
+    color: white;
+    font-size: 20px;
+    margin-right: 32px;
+    width: 300px;
+}
+#dessert li, #dessert-flavors li{
+    background-color: rgba(212, 212, 54, 0.92);
+    color: chocolate;
+    font-size: 20px;
+    margin-right: 32px;
+    width: 300px;
+}
+#menus .btn-primary{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#extras{
+    background-color: rgba(224, 172, 64, 0.92);
+    color: beige;
+    font-size: 32px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#extras .col-2{
+    background-color: gray;
+    color: white;
+}
+#extras .item-selected{
+    background-color: greenyellow;
+    color: tan;
+}
+#variety{
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ingredients{ background-color: lightyellow; }
+#drink-flavors{ background-color: lightblue; }
+#dessert-flavors{ background-color: lightgreen; }
+
+/* Trailer Viewer*/
+#trailer-viewer{
+    background-color: black; 
+}
+#trailer-viewer h2, #trailer-viewer h3{
+    color: steelblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#trailer-viewer p{
+    color: mediumspringgreen;
+    font-size: 1.08em;
+}
+#trailer-viewer video{
+    height: 750px;
+    width: 1000px;
+}
+
+/* Video Game Table */
+#gametable{
+    background-color: dimgray;
+    max-width: 1640px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: none; */
+}
+#tabletoggle, #gifttoggle{
+    background-color: navy;
+    color: aquamarine;
+    opacity: 0.72;
+    height: 64px;
+    width: 448px;
+    font-size: 32px;
+    margin: 0 auto;
+    display: block;
+}
+#gametable th{
+    color: turquoise;
+    font-size: 24px;
+    font-family: calibri;
+}
+#gametable td{
+    background-color: midnightblue;
+    color: mediumvioletred;
+    font-size: 20px;
+}
+#gametable tr{ display: none; }
+
+/* Music Player */
+#music, #music .row{
+    background-color: darkmagenta;
+    opacity: 0.92;
+    display: flex;
+}
+#music{ flex-direction: column; }
+#music .row{ justify-content: space-around; }
+#music h3, #music p{ color: rgb(72, 216, 184); }
+#music .col-3{ border: 5px ridge blueviolet; background-color: rgba(224, 178, 132, 0.24); }
+/* Prize */
+#prize{
+    background-color: midnightblue;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#prize .card{
+    background-color: mediumvioletred;
+    border: 5px double indigo;
+    height: 25vh;
+    width: 20vw;
+    display: none;
+}
+#prize img{
+    height: 16vh;
+    width: 16vw;
+    margin: 1vh auto;
+    display: block;
+}
+#prize h3, #prize p{
+    color: rgb(72, 216, 184);
+    text-align: center;
+    font-size: 24px;
+}
+#prize .prize-selected{ background-color: mediumspringgreen; }
+#prize .prize-selected h3{ color: indianred; }

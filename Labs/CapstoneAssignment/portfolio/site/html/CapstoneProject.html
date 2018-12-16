@@ -1,0 +1,350 @@
+<html>
+
+<head>
+<title>My Capstone Project</title>
+<link rel="stylesheet" href="../lib/bootstrap-4.1.3.min.css">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="../css/capstone.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<script src="../lib/bootstrap-4.1.3.min.js"></script>
+<script type="text/javascript" src="../js/capstone.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" id="navhead">Capstone Project</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Opening Preface</a></li>
+                <li class="nav-item"><a href="#part1" class="nav-link">Part 1: Introduction</a></li>
+                <li class="nav-item"><a href="#part2" class="nav-link">Part 2: Movies</a></li>
+                <li class="nav-item"><a href="#part3" class="nav-link">Part 3: Video Games</a></li>
+                <li class="nav-item"><a href="#part4" class="nav-link">Part 4: Finale</a></li>
+            </ul>
+        </div>
+    </nav>
+<hr>
+<h1>Welcome to my final capstone project! Our last meeting for Web Design class is finally here!</h1>
+<h2>
+    Did you remember what I said I was going to do for that capstone project? I thank you for all the fun and all the companionship that you've participated in with me!
+    So let us celebrate with our new page for this awesome moment that we can enjoy together like a great party!
+</h2>
+<h3>Enjoy our day-long conversations and activities!</h3>
+<hr> <!--Part 1-->
+<h2 id="part1">
+    Here is the first part of our web design finale! (Final episodes for TV shows and series almost always have to be multi-parter episodes, don't they?
+    Because they have to be epic and thus greater than anything done before in scale, so it'd make sense for them to be pretty big! Plus, making the final episode a 
+    multi-parter adds to the suspense and drama by making us wonder what happens next. :) )
+</h2>
+<p>
+    Part one of any celebration worth its weight in gold needs to include a great meal, tasty and healthy! So let's get started with making a good meal for ourselves, shall we?
+    You can choose what you'd like to eat from the jumbotron below, or you can just cook whatever you like. Either way, we can have a great conversation together while eating delicious food!
+    (And yes, even my research writing class talked about food, its main topic being how food relates to culture. Eating food together is a great way to socialize in social gatherings like parties!
+    Also, what's your favorite food and why is it your favorite? What makes it so delicious?)
+</p>
+<h3>Here is today's menu of delicious food to eat.</h3>
+<div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid" id="foodmenu">
+        <h2>Cafe Food Menu</h2>
+        <p>What kinds of delicious food can we serve you today? It is a pleasure to grant you your choice of the food on the list. Just click on the menu items than press submit for your order.</p>
+        <div class="container" id="menus"> <!-- Main Menus for ordering food -->
+            <div class="card" id="main-dish">
+                <h2>Main Dishes</h2>
+                <ul>
+                    <li id="sandwich">Sandwich</li>
+                    <li id="pasta">Pasta</li>
+                    <li id="pizza">Pizza</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="dish-select">Submit</button>
+            </div>
+            <div class="card" id="drink">
+                <h2>Drinks</h2>
+                <ul>
+                    <li id="juice">Juice</li>
+                    <li id="smoothie">Smoothie</li>
+                    <li id="bubble-tea">Bubble Tea</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="drink-select">Submit</button>
+            </div>
+            <div class="card" id="dessert">
+                <h2>Desserts</h2>
+                <ul>
+                    <li id="donuts">Donuts</li>
+                    <li id="macaroons">Macaroons</li>
+                    <li id="ice-cream">Ice Cream</li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="dessert-select">Submit</button>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="extras"> <!-- Extra Items -->
+            Extras:
+            <div class="col-2">Coffee</div>
+            <div class="col-2">Tea</div>
+            <div class="col-2">Milk</div>
+            <div class="col-2">Cookies</div>
+            <div class="col-2">Croissants</div>
+        </div>
+        <p>
+            Before your order is finished, please type in what ingredients and flavors you would like to have for your meal. 
+            Press Enter to add item to list, and click on the item to remove it.
+            It's important to customize your meal, so that you can enjoy your favorite food!
+        </p>
+        <div class="row" id="variety"> <!-- Flavors and ingrdients -->
+            <div class="col" id="ingredients">
+                <h3>Main Dish Ingredients</h3>
+                <input type="text" />
+                <ul>Selected:</ul>
+            </div>
+            <div class="col" id="drink-flavors">
+                <h3>Drink Flavors</h3>
+                <input type="text" />
+                <ul>Selected:</ul>
+            </div>
+            <div class="col" id="dessert-flavors">
+                <h3>Dessert Flavors</h3>
+                <input type="text" />
+                <ul>Selected:</ul>
+            </div>
+        </div>
+        <p>Thanks for ordering your delicious meal! Enjoy your food, and have a nice day!</p>
+    </div>
+</div>
+<hr><!--Part 2-->
+<h2 id="part2">Now that you've ordered your favorite meal, let's proceed to the next part our celebration.</h2>
+<p>
+    Looks like this is going to be real fun, especially when we do it together while eating our delicious cafe meals!
+    We're going to enjoy our time together with lots of <strong>pop culture</strong> and <strong>entertainment.</strong>
+    Ever since my early days of practicing web design, I've learned that you love pop culture very much. What are your most favorite
+    media franchises and pop culture icons? And what are your favorite fictional stories and what are your favorite story genres? I'd love to know what kinds to stories we can enjoy together!
+    <em>Oh, I wonder what kind of movies you would really like.</em> Why not we watch some trailers for some awesome movies that have been coming out recently?
+    Tell me which trailer you liked the most, what made it so interesting, and why you liked it. One day, we can go out to the theaters to watch the movies you like!
+    (Or we can just watch them on Netflix, or on a Blu-ray player or some other medium.) Anyway, enjoy the trailers!    
+</p>
+<div class="container" id="trailer-viewer">
+    <h2>Trailer Viewer</h2>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a data-toggle="tab" href="#trailer1">Trailer 1</a></li>
+        <li><a data-toggle="tab" href="#trailer2">Trailer 2</a></li>
+        <li><a data-toggle="tab" href="#trailer3">Trailer 3</a></li>
+        <li><a data-toggle="tab" href="#trailer4">Trailer 4</a></li>
+        <li><a data-toggle="tab" href="#trailer5">Trailer 5</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="trailer1" class="container tab-pane active fade">
+            <video src="../media/Wreck-It Ralph 2 Trailer.mp4" poster="../image/wreckitralph2.jpg" controls preload></video>
+            <h3>Wreck-It Ralph 2: Ralph Breaks the Internet</h3>
+            <p>
+                    Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a
+                    replacement part to save Vanellope's video game, "Sugar Rush." In way over their heads, Ralph and Vanellope rely on the citizens of the
+                    internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart
+                    and soul of trend-making site BuzzzTube.
+            </p>
+            <br>
+        </div>
+        <div id="trailer2" class="container tab-pane fade">
+            <video src="../media/Ant-Man and The Wasp Trailer.mp4" poster="../image/antman&thewasp.jpg" controls preload></video>
+            <h3>Ant-Man and the Wasp</h3>
+            <p>
+                    Scott Lang is grappling with the consequences of his choices as both a superhero and a father.
+                    Approached by Hope van Dyne and Dr. Hank Pym, Lang must once again don the Ant-Man suit and fight alongside the Wasp.
+                    The urgent mission soon leads to secret revelations from the past as the dynamic duo finds itself in an epic battle
+                    against a powerful new enemy.
+            </p>
+            <br>
+        </div>
+        <div id="trailer3" class="container tab-pane fade">
+            <video src="../media/Incredibles 2 Trailer.mp4" poster="../image/incredibles2.jpg" controls preload></video>
+            <h3>Incredibles 2</h3>
+            <p>
+                    Everyone’s favorite family of superheroes is back in “Incredibles 2” – but this time Helen (voice of Holly Hunter) is in the spotlight,
+                    leaving Bob (voice of Craig T. Nelson) at home with Violet (voice of Sarah Vowell) and Dash (voice of Huck Milner) to navigate the day-to-day
+                    heroics of “normal” life. It’s a tough transistion for everyone, made tougher by the fact that the family is still unaware of baby Jack-Jack’s
+                    emerging superpowers. When a new villain hatches a brilliant and dangerous plot, the family and Frozone (voice of Samuel L. Jackson) must find
+                    a way to work together again—which is easier said than done, even when they’re all Incredible.
+            </p>
+            <br>
+        </div>
+        <div id="trailer4" class="container tab-pane fade">
+            <video src="../media/Ready Player One Trailer.mp4" poster="../image/readyplayerone.jpg" controls preload></video>
+            <h3>Ready Player One</h3>
+            <p>
+                    From filmmaker Steven Spielberg comes the science fiction action adventure “Ready Player One,” based on Ernest Cline’s bestseller
+                    of the same name, which has become a worldwide phenomenon. The film is set in 2045, with the world on the brink of chaos and collapse.
+                    But the people have found salvation in the OASIS, an expansive virtual reality universe created by the brilliant and eccentric James Halliday
+                    (Mark Rylance). When Halliday dies, he leaves his immense fortune to the first person to find a digital Easter egg he has hidden somewhere in the OASIS,
+                    sparking a contest that grips the entire world. When an unlikely young hero named Wade Watts (Tye Sheridan) decides to join the contest,
+                    he is hurled into a breakneck, reality-bending treasure hunt through a fantastical universe of mystery, discovery and danger.
+            </p>
+            <br>
+        </div>
+        <div id="trailer5" class="container tab-pane fade">
+            <video src="../media/Guardians of the Galaxy Vol. 2 Trailer.mp4" poster="../image/guardiansofthegalaxy2.jpg" controls preload></video>
+            <h3>Guardians of the Galaxy Vol. 2</h3>
+            <p>
+                    Peter Quill and his fellow Guardians are hired by a powerful alien race, the Sovereign, to protect their precious batteries from invaders.
+                    When it is discovered that Rocket has stolen the items they were sent to guard, the Sovereign dispatch their armada to search for vengeance.
+                    As the Guardians try to escape, the mystery of Peter's parentage is revealed.
+            </p>
+            <br>
+        </div>
+    </div>
+</div>
+<hr><!--Part 3-->
+<h2 id="part3">Those movie trailers were awesome, weren't they? Now we can go to the <strong>REALLY</strong> fun part: <strong>VIDEO GAMES!</strong></h2>
+<p>
+    That's right, you heard me. We're going to talk about video games! <em>Woohoo!!!</em> At the same quarter I was taking web design class, I also took a class about
+    game development and managed to create a simple fighting game with my team, which involves playing a series of exercise minigames to improve different player attributes
+    before the player fights the opponent. Pretty cool, isn't it? Not to mention that I learned a lot about the game development process and what makes a game a "game".
+    But now, we can enjoy talking about the video games we like! Video games are not only super fun, they also are a great way to socialize with friends and evoke the most sublime
+    part of your spirit. What platform do you usually prefer to play video games on? Xbox? PlayStation? Or maybe the Nintendo Switch? (I hoped you enjoyed the Nintendo Switch that I offered you as a gift!
+    What kinds of cool games did you play on it, and why did you like them?) Or maybe the PC? And what are some of the best games you've ever played? What are your favorite video game characters?
+    I might as well play some of your favorite games if you can tell me! But right now I want to tell you about <em>Steam</em>, one of the best PC gaming platforms out there.
+    It's got <strong>tons and TONS</strong> of awesome games out there for you to play! So why not download it for free? That way, we can play our favorite video games with each other over our PCs!
+    (Or if you've already downloaded Steam, then go ahead and let us play!) Here are some of the best games, in my opinion, to buy on Steam:
+</p>
+<button type="button" class="btn btn-primary" id="tabletoggle">Open/Close Table</button>
+<table class="table" id="gametable"></table>
+<p>
+    <strong>Whoa!</strong> I almost forgot that it's going to be <em>Christmas</em> a few weeks from now! Now it's the perfect time to shop for games this holiday season
+    for some really good deals! Keep your eyes peeled for winter/Christmas sales to buy whatever gifts you desire, for the sake of cheap prices for lots of fun! Maybe it's time to sing
+    <q>Twelve Days of Christmas</q> to get into the holiday spirit! (Or we can sing our own parodies of 12 Days of Christmas to express our joy!) It's also great to read
+    a few Christmas stories, or even better, make our own Christmas stories to add more of that Xmas flair! And to top it all off, we can indulge in lots of awesome Christmas-related
+    activities like setting up and decorating a Christmas tree, hanging stockings, building snowmen and having snowball fights, doing Christmas arts and crafts, and the best part,
+    playing video games with each other, especially the games that we would buy for Christmas! And I hope I get to see you on Christmas so that we can enjoy these activities together!
+</p>
+<hr><!--Part 4-->
+<h2 id="part4">
+    Finally! It's time to wrap things up and reflect on our time together. This is it! The final part of our celebration!
+</h2>
+<p>
+    We're near the end of our celebration, and we've sure been enjoying the Christmas hype leat section! Well, dont' get too hyped about all
+    the exciting stuff for Christmas. Not only would you eventually be faced with great dissapointment for boarding the hype train that derails and crashes
+    from the enourmous amount of hype, like what happened with <a href="https://store.steampowered.com/app/275850/No_Mans_Sky/">No Man's Sky,</a> especially
+    considering the ending when you go to the center of the galaxy, it's also pretty naughty, and all you'll get would be a disappointing mountainful of <strong>coal.</strong>
+    Like every other naughty children on Christmas! Anyway, here's some awesome pieces of classical music that are very fitting for great celebrations...
+    because they've been played specifically to celebrate grand events. You might as well play them while we schmooze about our time together.
+    They're the perfect music to listen to while having a long chat about all the cool thigs about ourselves!
+</p>
+<div class="container" id="music">
+    <h3>Music for the Finale</h3>
+    <div class="row">
+        <audio src="../media/Ode to Joy.mp3" controls preload></audio>
+        <audio src="../media/Pomp and Circumstance.mp3" controls preload></audio>
+        <audio src="../media/1812 Overture.mp3" controls preload></audio>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-3">
+        <p>
+            <em>Ode to Joy.</em> Yes, that masterpiece by Ludwig van Beethoven is the perfect thing to play when you've finally
+            completed a major life goal. Its high-pitched vocals provide the uplifting atmosphere of accomplishment to eveyone who hears it.
+            It is so grandoise, that you might as well play it after you've overcome such a difficult challenge, such as defeating
+            <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/ThatOneBoss">that one video game boss that was so frustratingly hard</a>
+            you might as well have rage quitted the game because <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/TheyKilledKennyAgain">it killed you like Kenny so many times.</a>
+        </p>
+        </div>
+        <div class="col-3">
+        <p>
+            Did you remember that epic song that played at you high school/college graduation? That's Edward Elgar's <em>Pomp and Circumstance,</em>
+            the perfect congratulations song that is very fitting to play after you've won such a great challenge and completed your heroic quest.
+            (Speaking of graduations, what was your experience of it like? How did it make you so happy, giving that rewarding sense of achievement?)
+            It sounds so much like a credits theme for a movie/video game, that it might as well be played at a video game ending, especially in an action-adventure
+            or RPG game when you've completed the game by defeating the final boss. Speaking of that, what video games have you beaten, and thus got to the ending?
+            How did it feel when you've finally completed the game? And what did the ending feel like? I'd love to know! :)
+        </p>
+        </div>
+        <div class="col-3">
+        <p>
+            If you have a taste for victorious-sounding music, here's Tchaikovsky's <em>1812 Overture!</em>
+            Commonly played at military parades, this glorious-sounding musical piece is the perfect thing to play
+            after a major victory in life. <br> <strong>Warning: this piece features incredibly loud cannon sounds near the end.
+            While it enhances the grand sense of victory over a great adversary, it is so deafeningly loud that it can scare and overwhelm
+            those who are easily disturbed by loud noises. For the sake of protecting your ears, please bring earplugs if you are sensitive to noise.</strong>
+        </p>
+        </div>
+    </div>
+    <br>
+    </div>
+    <br>
+    <p>
+        I would like to confess not only my thoughts about our time together, but also I would like to reveal more about my future tech career.
+        When I first met you through my first web design pages, I noticed that you had an appreciation of my sense of humor in my pages. I also liked
+        how you were having lots of fun with me with our daily routines. Since then I've learned a lot of cool things about you. You and me not only
+        share a very funny sense of humor and a great interest with each other, but also, we've realized the importance of a good friendship through doing
+        things we've enjoyed with each other, and we have developed a greater appreciation of our friendship from the thing we've learned together.
+        I give my honest and sincere thanks to you for all the good times we've spent together.
+    </p>
+    <p>
+        And about my plans for a technology-related career - I'm not entirely sure what kind of tech job I would have, but I will accept any tech job worth its salt,
+        as long as it pays me a decent amount of money, something that utilizes my passions and skills very well, and is within my ability to handle as well as
+        something I meet the requirements for. I would start off with testing and quality asurrance jobs, because I not only have a keen eye for observation that allows me to
+        gather useful information and detect anything abnormal or needs improvement, but also because it gives me a sense of contribution and teamwork, and allows me to learn more
+        about the tech development process as well as improving my tech skills. Maybe after I've gained more experience with the tech industry I could get a job with
+        actual job with tech development, and work for a development team. In my earlier draft, I promised to you that I would not only discuss my career plans for the future, but also How
+        my experience with web design relates to it. I crafted this page with skilled consciseness and experienced talent, to show off all that I have learned from web design
+        class. Were you observing the interactive elements of this page and thinking about how they work, as well as the visual design of this page and all of its constituent elements?
+        The key here lies in the skills I've developed and honed through lab practice and useful information I've gathered online, as well as my teacher's lectures.
+        If you've been having a lot of fun with my sense of comedic humor, and looking at how everything is neatly organized and visually appealing, then you might as well
+        wonder how I was able to make it that way. <q>What kind of magic is this?</q>, you might ask. To be very honest with you, I personally designed this page with all the
+        web design knowledge I've gained in class, combined with my natural intelligence, reasoning, and my understanding of technology and computers.
+        Here are three life lessons that I have gained a greater understanding of through this class that I want you learn with your heart:
+        <ol>
+            <li>
+                If you're not sure with what job or career you'd like to pursue, assess your talents, skills, experience, and passions to see what career paths would fit best for you,
+                annd see if you can find any jobs that are practical for your life.
+            </li>
+            <li>
+                If you want to understand how something interesting works, analyze it critically and break it down to understand more about how it works,
+                and make critical observations to obtain useful information about how it is the way it is. Think about how the information logically goes together
+                to explain how it works.
+            </li>
+            <li>Having a deeper understanding about how something works will give you a deeper and more robust appreciation of it.</li>
+        </ol>
+    </p>
+    <p>
+        Thank you very much for viewing my web design work, and all the friendship you've nurtured with me. I am very grateful that I met you and
+        that I enjoyed my time with you. It has been a great pleasure to socialize with you, share my interests with you, and most importantly, to learn from you.
+        For that reason, I sincerely grant you my deepest gratitude. As a token of appreciation, I will gift you a choice of 3 games for the Nintendo Switch I gifted you,
+        out of a collection of 6. As this is the last time I meet you at Web Design class, take these games as a gift of my utmost gratitude. I don't know
+        when we will meet again, but I hope I can see you and have some time with you again. :)
+    </p>
+    <h2>Here are the choices of Nintendo Switch games that you can choose as a gift. (You can select up to 3 out of 6 as a gift.) Farewell, and I hope to meet you again.</h2>
+    <button type="button" class="btn btn-primary" id="gifttoggle">Claim Your Prize</button>
+    <div class="container-fluid" id="prize">
+        <div class="card">
+            <img class="card-img-top" src="../image/supermarioodyssey.jpg" alt="Super Mario Odyssey">
+            <h3>Super Mario Odyssey</h3>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../image/newsupermariobrosudeluxe.jpg" alt="New Super Mario Bros. U Deluxe">
+            <h3>New Super Mario Bros. U Deluxe</h3>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../image/mariokart8deluxe.jpg" alt="Mario Kart 8 Deluxe">
+            <h3>Mario Kart 8 Deluxe</h3>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../image/legendofzeldabotw.jpg" alt="The Legend of Zelda: Breath of the Wild">
+            <h3>The Legend of Zelda: Breath of the Wild</h3>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../image/octopathtraveler.jpg" alt="Octopath Traveler">
+            <h3>Octopath Traveler</h3>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../image/supersmashbrosultimate.webp" alt="Super Smash Bros. Ultimate">
+            <h3>Super Smash Bros. Ultimate</h3>
+        </div>
+    </div>
+    <h1>
+        The End. (I know that this is a really cliched phrase to place at the end of books, movies, and video games, just like "once upon a time"
+        and "they lived happily ever after" in fairytales, but trust me, it has the classic feeling that brings about a sense of resolution that
+        makes us all appreciate the story.)
+    </h1>
+<hr><!--End-->
+</body>
+
+</html>
